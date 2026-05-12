@@ -7,21 +7,21 @@
 
 ---
 
-## 📋 About
+## About
 
 Advanced real-time object detection system using **YOLOv8x** with **dynamic random color assignment** for each detected class. Each object class receives a unique color that remains **consistent throughout the video stream**, making it easy to track specific object categories.
 
 **Key Features:**
-- ⚡ Real-time detection at 25-30 FPS on CPU
-- 🎨 **Unique random colors per class** (consistent across frames)
-- 🏷️ Confidence scores for each detection
-- 📹 Live webcam stream processing
-- 🎯 YOLOv8x model (highest accuracy variant)
-- 🚀 Easy customization and extension
+- Real-time detection at 25-30 FPS on CPU
+- **Unique random colors per class** (consistent across frames)
+- Confidence scores for each detection
+- Live webcam stream processing
+- YOLOv8x model (highest accuracy variant)
+- Easy customization and extension
 
 ---
 
-## 🎨 What Makes This Different?
+## What Makes This Different?
 
 Unlike standard object detection, this project assigns a **unique color to each detected object class**:
 - First detection of a class → **random color assigned**
@@ -37,7 +37,7 @@ Dog → Red (consistent)
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Component | Technology |
 |-----------|-----------|
@@ -49,7 +49,7 @@ Dog → Red (consistent)
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -58,7 +58,7 @@ Dog → Red (consistent)
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/username/real-time-yolo-color-detection.git
+git clone https://github.com/FibyEhab/real-time-yolo-color-detection.git
 cd real-time-yolo-color-detection
 ```
 
@@ -77,7 +77,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### Basic Usage
 ```bash
@@ -92,17 +92,9 @@ python main.py
 5. **Confidence scores** displayed for each detection
 6. **Press 'Q'** to quit the program
 
-### Output Example
-```
-🚀 Real-Time Object Detection Started!
-Press 'Q' to quit
-👋 Detection stopped by user
-✅ Program terminated successfully
-```
-
 ---
 
-## 💡 How the Color System Works
+## How the Color System Works
 
 ### Color Assignment Logic
 ```python
@@ -126,7 +118,7 @@ color = class_colors[cls]  # Use the SAME color
 
 ---
 
-## 🎨 Customization Guide
+## Customization Guide
 
 ### Option 1: Manual Color Assignment
 Instead of random colors, assign specific colors to specific classes:
@@ -168,7 +160,7 @@ cap.set(4, 384)   # Height
 # Speed vs Accuracy tradeoff:
 model = YOLO("yolov8n.pt")  # Nano (fastest)
 model = YOLO("yolov8s.pt")  # Small
-model = YOLO("yolov8m.pt")  # Medium ⭐ RECOMMENDED FOR BALANCE
+model = YOLO("yolov8m.pt")  # Medium RECOMMENDED FOR BALANCE
 model = YOLO("yolov8l.pt")  # Large
 model = YOLO("yolov8x.pt")  # Extra Large (slowest but most accurate)
 ```
@@ -190,7 +182,7 @@ cv2.putText(frame, text, (x1, y1 - 10),
 
 ---
 
-## 📊 Performance Metrics
+## Performance Metrics
 
 | Aspect | Details |
 |--------|---------|
@@ -211,7 +203,7 @@ cv2.putText(frame, text, (x1, y1 - 10),
 
 ---
 
-## 🔧 Advanced Configuration
+## Advanced Configuration
 
 ### For GPU Acceleration
 ```bash
@@ -242,7 +234,7 @@ while True:
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Issue: "ModuleNotFoundError: No module named 'ultralytics'"
 ```bash
@@ -283,7 +275,7 @@ Grant camera access to your terminal:
 
 ---
 
-## 🚀 Next Steps / Extensions
+## Next Steps / Extensions
 
 Want to enhance this project?
 
@@ -297,7 +289,7 @@ Want to enhance this project?
 
 ---
 
-## 📄 Project Structure
+## Project Structure
 
 ```
 real-time-yolo-color-detection/
@@ -312,7 +304,7 @@ real-time-yolo-color-detection/
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Found a bug? Have an idea? Contributions are welcome!
 
@@ -324,7 +316,7 @@ Found a bug? Have an idea? Contributions are welcome!
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
@@ -332,30 +324,30 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ---
 
-## 👨‍💻 Author
+## Author
 
-**Ahmed Hassan** - AI Engineer
+**Fiby Ehab** - AI Engineer
 
-📧 **Email:** your@email.com  
-💼 **LinkedIn:** [Ahmed Hassan](https://www.linkedin.com/in/ahmed-hassan-ai)  
-🐙 **GitHub:** [@username](https://github.com/username)  
+**Email:** your@email.com
+
+**LinkedIn:** [Fiby Ehab](https://www.linkedin.com/in/fiby-ehab-270b55286/)
+
+**GitHub:** [@FibyEhab](https://github.com/FibyEhab)  
 
 Feel free to reach out for questions, suggestions, or collaborations!
 
 ---
 
-## ⭐ Support This Project
+## Support This Project
 
 If this project was useful to you:
 - **⭐ Star** this repository
-- **🍴 Fork** it for your own use
-- **📢 Share** it with others
-- **💬 Comment** your feedback
+- **Fork** it for your own use
+- **Share** it with others
+- **Comment** your feedback
 
-Every star motivates me to keep improving and creating more projects! 🙏
+Every star motivates me to keep improving and creating more projects!
 
 ---
 
 **Made with ❤️ for the AI community**
-
-Last updated: January 2025
