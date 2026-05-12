@@ -1,0 +1,28 @@
+# Deep Learning Framework
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# YOLOv8 and Ultralytics
+ultralytics>=8.0.0
+
+# Computer Vision
+opencv-python>=4.8.0
+opencv-contrib-python>=4.8.0
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Utilities
+Pillow>=9.5.0
+requests>=2.31.0
+matplotlib>=3.7.0
+tqdm>=4.65.0
+pyyaml>=6.0
+
+# Optional: For GPU support (uncomment if you have CUDA)
+# torch-cuda-runtime>=11.8
+
+# Optional: For better performance tracking
+# tensorboard>=2.13.0
